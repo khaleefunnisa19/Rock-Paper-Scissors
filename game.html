@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- Instruction Screen -->
+    <div id="instruction-screen">
+        <h2>How to Play</h2>
+        <p>
+            Select Rock, Paper, or Scissors to play against the computer.<br>
+            Rock beats Scissors, Scissors beats Paper, Paper beats Rock.<br>
+            Try to win as many rounds as you can!
+        </p>
+        <button id="start-btn">I Understand. Start Game!</button>
+    </div>
+
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="./rock.png">
+        </div>
+        <div class="choice" id="paper">
+            <img src="./paper.png">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="./scissors.png">
+        </div>
+    </div>
+
+    <div class="scores">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg">play your move</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
